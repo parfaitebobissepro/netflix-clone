@@ -1,0 +1,13 @@
+/* 
+-------------bloc-type-twins----------------
+Description: bloc with text at left and image at right; 
+Example:homepage first bloc 
+*/
+
+
+.bloc-type-twins {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
