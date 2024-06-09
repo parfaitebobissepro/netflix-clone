@@ -3,58 +3,54 @@
     Date: 08/06/2024
 ***/
 
-
-/** Variables **/
-
 /* Temp */
 main {
     /* min-height: 115vh; */
 }
 /* end Temp */
 
+/** Import fonts **/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/** Variables **/
+
 :root {
     /* app-fonts */
-    --app-font-family: "Poppins", "system-ui", "Sans-Serif";
-    --app-font-size: 15px;
-    --app-font-weight: 300;
+    --app-font-family: "Netflix Sans","Helvetica Neue","Segoe UI","Roboto","Ubuntu","sans-serif";
+    --app-font-size: 14px;
+    --app-font-weight: 500;
     /* app-color */
-    --app-color-primary: #AE9C86;
-    --app-color-primary-opacited: rgba(116, 81, 235, 0.08);
-    --app-color-primary-opacited-ligth: rgba(116, 81, 235, 0.12);
-    --app-color-accent: "";
-    --app-color-gray: "";
-    --app-color-text-primary: #4F5955;
-    --app-color-text-accent: #AE9C86;
-    --app-color-text-white: #FFF;
-    --app-color-text-gray: rgb(97, 97, 97);
-    --app-color-border-gray-ligth: #dad9dc;
-    --app-color-border-gray-high-ligth: rgba(0, 0, 0, 0.04);
-    --app-color-border-gray-high-ligth-2: rgba(0, 0, 0, 0.42);
-    --app-color-background-gray-high-ligth: rgba(0, 0, 0, 0.04);
-    --app-color-ligth: #FFF;
-    --app-color-purple-dark: rgb(39, 26, 56);
-    --app-color-icon-dark: rgba(0, 0, 0, 0.54);
+    --app-color-primary: #141414;
+    /* --app-color-primary-opacited: rgba(116, 81, 235, 0.08); */
+    --app-color-accent: "#e50914";
+    --app-color-gray: "#ffffff4d";
+
+    --app-color-text-primary: #fff;
+    --app-color-text-accent: #000;
+    --app-color-text-green: #46d369;
+    --app-color-text-gray: #777;
+    --app-color-text-gray-2: #d2d2d2;
+
+    --app-color-border-gray-light: #ffffff66;
+    --app-color-border-gray-high-light: #2a2a2a99;
+    
     /* app-background */
-    --app-background-default: #FFF;
-    --app-color-background-gray-ligth: rgb(245, 245, 245);
+    --app-color-background-default: #141414;
+    --app-color-background-tranparence: #6d6d6eb3;
+    --app-color-background-tranparence-light: #6d6d6e66;
+    --app-color-background-tranparence-2: #33333399;
+
+    /* app-color-icon */
+    --app-color-icon-dark: #000;
+    --app-color-icon-light: #FFF;
+
     /* app-border-raduis */
-    --app-border-button-raduis-default: 4px;
+    --app-border-button-raduis-default: 6px;
+
     /* --app-global-padding-default */
-    --app-global-padding-default: 50px;
-    --app-padding: 51px;
-}
-
-@media (max-width:900px) {
-    :root {
-        --app-font-size: 12px;
-    }
-}
-
-
-@media (min-width:991px) and (max-width:1200px) {
-    :root {
-        --app-font-size: 14px;
-    }
+    --app-global-padding-default: 3em;
+    --app-padding: 0.5em 1em;
 }
 
 * {
@@ -69,9 +65,9 @@ a {
 }
 
 p {
-    margin-top: 1rem;
+    margin-top: 0rem;
     font-size: 1rem;
-    line-height: 1.7rem;
+    line-height: 1.42rem;
     padding: 0;
 }
 
@@ -134,7 +130,6 @@ h1 {
 /** links **/
 
 .flat-link {
-    font-size: 0.875rem;
     font-weight: 500;
     text-transform: uppercase;
     color: var(--app-color-primary);
@@ -162,25 +157,6 @@ b {
     -moz-osx-font-smoothing: inherit;
     appearance: none;
     -webkit-appearance: none;
-}
-
-.button-type-1 {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.7rem 2rem;
-    text-transform: uppercase;
-    margin-top: 1rem;
-    border: none;
-}
-
-.button-type-1:not(:disabled){
-    color: white;
-    background-color: var(--app-color-primary);
-}
-
-.button-type-1:not(:disabled):hover {
-    color: white;
-    background-color: var(--app-color-primary);
 }
 
 /** Others **/

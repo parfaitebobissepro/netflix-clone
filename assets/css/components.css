@@ -1,0 +1,20 @@
+/*** Bouton type-1 **/
+
+.button-type-1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.7rem 2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    border: none;
+}
+
+.button-type-1:not(:disabled){
+    color: white;
+    background-color: var(--app-color-primary);
+}
+
+.button-type-1:not(:disabled):hover {
+    color: white;
+    background-color: var(--app-color-primary);
+}
