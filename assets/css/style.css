@@ -62,6 +62,7 @@ main {
 
 a {
     text-decoration: none;
+    color: var(--app-color-text-primary);
 }
 
 p {
@@ -77,6 +78,11 @@ html {
     font-weight: var(--app-font-weight);
     font-size: var(--app-font-size);
     color: var(--app-color-text-primary);
+    margin: 0;
+    padding: 0;
+
+    /*** TEMP ***/
+    background-color: black;
 }
 
 /** titles **/
@@ -131,8 +137,7 @@ h1 {
 
 .flat-link {
     font-weight: 500;
-    text-transform: uppercase;
-    color: var(--app-color-primary);
+    color: var(--app-color-text-primary);
 }
 
 /** bold & strong **/

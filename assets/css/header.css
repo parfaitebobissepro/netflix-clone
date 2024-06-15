@@ -1,0 +1,51 @@
+/** Header **/
+
+.principal-header .sub-header{
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and ( min-width: 1500px) {
+    .principal-header .sub-header{
+        padding: 0px 60px;
+    }
+}
+
+.principal-header .logo-link img{
+    width: 8%;
+    min-width: 44px;
+}
+
+@media screen and ( min-width: 1500px) {
+    .principal-header .logo-link img{
+        width: 93px;
+    }
+}
+
+/** Nav **/
+
+.principal-header .bloc-left {
+    display: flex;
+}
+
+.principal-nav ul.desktop-menu li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.principal-nav ul.desktop-menu li a{
+    transition: color .4s;
+    color: #e5e5e5;
+    display: inline-block;
+}
+
+.principal-nav ul.desktop-menu li:hover a{
+    color: #b3b3b3;
+}
+
+.principal-nav ul.desktop-menu li.active a{
+    color: var(--app-color-text-primary);
+    cursor: default;
+    pointer-events: none;
+}

@@ -7,41 +7,42 @@
     <title>Accueil - Netflix</title>
     <link rel="favicon" href="/favicon.ico">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/home.css">
 </head>
 
 <body>
-    <header>
-        <div class="sticky">
+    <header class="principal-header">
+        <div class="sticky sub-header">
             <div class="bloc-left">
-                <a href="">
-                    <img src="" alt="">
+                <a href="#" class="logo-link">
+                    <img src="./assets/img/logo.png"  alt="Logo Netflix" aria-label="Netflix">
                 </a>
-                <nav>
-                    <ul>
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Séries</a></li>
-                        <li><a href="">Films</a></li>
-                        <li><a href="">Nouveautés les plus regardées</a></li>
-                        <li><a href="">Ma liste</a></li>
-                        <li><a href="">Explorer par langue</a></li>
+                <nav class="principal-nav" role="navigation">
+                    <ul class="desktop-menu">
+                        <li class="active"><a href="#">Accueil</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">Nouveautés les plus regardées</a></li>
+                        <li><a href="#">Ma liste</a></li>
+                        <li><a href="#">Explorer par langue</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="bloc-right">
-                <form action="">
+                <form action="" role="search">
                     <input type="text" class="search">
                 </form>
                 <ul class="">
-                    <li><a href="" class="menu-profil-name">Jeunesse</a></li>
+                    <li><a href="#" class="menu-profil-name">Jeunesse</a></li>
                     <li>
-                        <a href="" class="menu-notifications"></a>
+                        <a href="#" class="menu-notifications"></a>
                         <ul>
                             <li>Nouveauté Sonic le film</li>
                         </ul>
                     </li>
                     <li>
-                        <a href="" class="menu-profils"></a>
+                        <a href="#" class="menu-profils"></a>
                         <ul>
                             <li>HENRI</li>
                         </ul>
@@ -49,7 +50,7 @@
                 </ul>
             </div>
         </div>
-        <div class="banner">
+        <div class="banner" role="banner">
 
         </div>
     </header>
