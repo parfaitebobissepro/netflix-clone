@@ -82,7 +82,7 @@ html {
     padding: 0;
 
     /*** TEMP ***/
-    background-color: black;
+    background-color: rgb(155, 123, 123);
 }
 
 /** titles **/
@@ -212,3 +212,34 @@ table .btn {
 
 table tr td{
 }
+
+
+/*** Listes ***/
+
+ul,ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*** Dropdown ***/
+
+ul.dropdown-menu{
+    position: absolute;
+}
+
+.dropdown-menu li{
+    background: rgba(0,0,0,.85);
+}
+
+.dropdown-menu li:hover{
+    background: rgba(0,0,0,.9);
+}
+
+.dropdown-menu li a{
+    display: inline-block;
+}
+
+
+
