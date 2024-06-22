@@ -1,5 +1,14 @@
 /** Header **/
 
+
+/*** Fonts header ***/
+
+@media screen and (max-width: 1200px) {
+    .principal-header {
+        --app-font-size: 1.2rem;
+    }
+}
+
 .principal-header .sub-header{
     padding: 0 4%;
     display: flex;
@@ -74,9 +83,14 @@
     margin-left: 18px;
 }
 
+.principal-nav  ul.mobile-menu li:is(:hover,.active,:focus-within) ul{
+    display: block;
+}
+
 .principal-nav  ul.mobile-menu ul {
     width: 260px;
     transform: translateX(-90px);
+    display: none;
 }
 
 .principal-nav ul.mobile-menu > li > a{
@@ -85,16 +99,30 @@
     display: inline-block;
 }
 
+@media screen and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) {
+    body, html {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .principal-nav ul.mobile-menu > li li a{
+        --font-size: 13px;
+    }
+}
+
 
 .principal-nav  ul.mobile-menu > li > a::after{
     content: ' ';
     display: inline-block;
     width: 0; 
     height: 0; 
-    border-left: 7.5px solid transparent;
-    border-right: 7.5px solid transparent;
-    border-top: 7px solid var(--app-color-text-primary);
+    border-left: 5.5px solid transparent;
+    border-right: 5.5px solid transparent;
+    border-top: 5px solid var(--app-color-text-primary);
     margin-left: 5px;
+    position: relative;
+    top: -2px;
 }
 
 .principal-nav  ul.mobile-menu li ul li a{
@@ -110,3 +138,4 @@
         display: none;
     }
 }
+
