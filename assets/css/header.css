@@ -10,14 +10,16 @@
 }
 
 .principal-header .sub-header{
-    padding: 0 4%;
+    margin: 0 4%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 @media screen and ( min-width: 1500px) {
     .principal-header .sub-header{
-        padding: 0px 60px;
+        margin: 0px 60px;
     }
 }
 
@@ -28,6 +30,8 @@
 .principal-header .logo-link{
     width: 8%;
     min-width: 65px;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and ( min-width: 1500px) {
@@ -44,6 +48,7 @@
 
 .principal-nav{
     flex:1;
+    align-content: center;
 }
 
 
@@ -83,14 +88,13 @@
     margin-left: 18px;
 }
 
-.principal-nav  ul.mobile-menu li:is(:hover,.active,:focus-within) ul{
+.principal-nav  ul.mobile-menu li:focus-within ul{
     display: block;
 }
 
 .principal-nav  ul.mobile-menu ul {
     width: 260px;
     transform: translateX(-90px);
-    display: none;
 }
 
 .principal-nav ul.mobile-menu > li > a{
@@ -139,3 +143,72 @@
     }
 }
 
+
+
+/** Right bloc **/
+
+.principal-header .bloc-right{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.account-dropdowns-list{
+    display: flex;
+    align-items: center;
+}
+
+
+/** Search Input **/
+
+.search-container{
+    display: flex;
+    position: relative;
+    height: 34px;
+    border: 1px solid var(--app-color-border-gray-white);
+    align-items: center;
+    padding: 6px;
+}
+
+.search-container .search-input{
+    border: none;
+    background-color: transparent;
+    color: var(--app-color-text-primary);
+    padding: 7px 14px 7px 7px;
+    width: 212px;
+    transition: .4s;
+}
+
+.search-container .search-input:focus{
+    outline: none;
+}
+
+.search-container #search-icon{
+}
+
+.search-container #search-icon, .search-container #close-icon {
+    /* position: absolute; */
+}
+
+.search-input:invalid+svg{
+    visibility: hidden;
+}
+
+.search-container:not(.open) {
+    padding: 0;
+    border: none;
+}
+
+.search-container:not(.open) .search-input{
+    padding-left: 0;
+    padding-right: 0;
+    width: 0px;
+    padding: 0;
+    transition: .05s;
+}
+
+.search-container:not(.open) #close-icon{
+    visibility: hidden;
+    width: 0;
+    transition: .05s;
+}

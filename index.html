@@ -13,54 +13,60 @@
 
 <body>
     <header class="principal-header">
-        <div class="sticky sub-header">
-            <div class="bloc-left">
-                <a href="#" class="logo-link">
-                    <img src="./assets/img/logo.png"  alt="Logo Netflix" aria-label="Netflix">
-                </a>
-                <nav class="principal-nav" role="navigation">
-                    <ul class="desktop-menu">
-                        <li class="active"><a href="#">Accueil</a></li>
-                        <li><a href="#">Séries</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">Nouveautés les plus regardées</a></li>
-                        <li><a href="#">Ma liste</a></li>
-                        <li><a href="#">Explorer par langue</a></li>
-                    </ul>
-                    <ul class="mobile-menu">
+        <div class="sticky">
+            <div class="sub-header">
+                <div class="bloc-left">
+                    <a href="#" class="logo-link">
+                        <img src="./assets/img/logo.png"  alt="Logo Netflix" aria-label="Netflix">
+                    </a>
+                    <nav class="principal-nav" role="navigation">
+                        <ul class="desktop-menu">
+                            <li class="active"><a href="#">Accueil</a></li>
+                            <li><a href="#">Séries</a></li>
+                            <li><a href="#">Films</a></li>
+                            <li><a href="#">Nouveautés les plus regardées</a></li>
+                            <li><a href="#">Ma liste</a></li>
+                            <li><a href="#">Explorer par langue</a></li>
+                        </ul>
+                        <ul class="mobile-menu parent-dropdown-menu">
+                            <li>
+                                <a href="#">Parcourir</a>
+                                <ul class="dropdown-menu with-top-line with-top-arrow">
+                                    <li class="active"><a href="#">Accueil</a></li>
+                                    <li><a href="#">Séries</a></li>
+                                    <li><a href="#">Films</a></li>
+                                    <li><a href="#">Nouveautés les plus regardées</a></li>
+                                    <li><a href="#">Ma liste</a></li>
+                                    <li><a href="#">Explorer par langue</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="bloc-right">
+                    <form action="" role="search">
+                        <div class="search-container">
+                            <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" role="img" data-icon="MagnifyingGlassStandard" aria-hidden="true" class="search-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10ZM15.6177 17.0319C14.078 18.2635 12.125 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 12.125 18.2635 14.078 17.0319 15.6177L22.7071 21.2929L21.2929 22.7071L15.6177 17.0319Z" fill="currentColor"></path></svg>
+                            <input type="text" class="search-input" placeholder="" required>
+                            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                        </div>
+                    </form>
+                    <ul class="account-dropdowns-list parent-dropdown-menu">
+                        <li><a href="#" class="menu-profil-name">Jeunesse</a></li>
                         <li>
-                            <a href="#">Parcourir</a>
-                            <ul class="dropdown-menu with-top-line with-top-arrow">
-                                <li class="active"><a href="#">Accueil</a></li>
-                                <li><a href="#">Séries</a></li>
-                                <li><a href="#">Films</a></li>
-                                <li><a href="#">Nouveautés les plus regardées</a></li>
-                                <li><a href="#">Ma liste</a></li>
-                                <li><a href="#">Explorer par langue</a></li>
+                            <a href="#" class="menu-notifications">a</a>
+                            <ul class="dropdown-menu">
+                                <li>Nouveauté Sonic le film</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-profils">b</a>
+                            <ul class="dropdown-menu">
+                                <li>HENRI</li>
                             </ul>
                         </li>
                     </ul>
-                </nav>
-            </div>
-            <div class="bloc-right">
-                <form action="" role="search">
-                    <input type="text" class="search">
-                </form>
-                <ul class="">
-                    <li><a href="#" class="menu-profil-name">Jeunesse</a></li>
-                    <li>
-                        <a href="#" class="menu-notifications"></a>
-                        <ul>
-                            <li>Nouveauté Sonic le film</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="menu-profils"></a>
-                        <ul>
-                            <li>HENRI</li>
-                        </ul>
-                    </li>
-                </ul>
+                </div>
             </div>
         </div>
         <div class="banner" role="banner">
@@ -74,5 +80,5 @@
 
     </footer>
 </body>
-
+<script src="./assets/js/header.js"></script>
 </html>

@@ -32,6 +32,7 @@ main {
     --app-color-text-gray: #777;
     --app-color-text-gray-2: #d2d2d2;
 
+    --app-color-border-gray-white: #FFF;
     --app-color-border-gray-light: #ffffff66;
     --app-color-border-gray-high-light: #2a2a2a99;
     
@@ -82,7 +83,7 @@ html {
     padding: 0;
 
     /*** TEMP ***/
-    background-color: rgb(155, 123, 123);
+    background-color: #000;
 }
 
 /** titles **/
@@ -264,6 +265,15 @@ ul,ol{
 
 .dropdown-menu li a{
     display: inline-block;
+}
+
+
+.dropdown-menu {
+    display: none;
+}
+
+.parent-dropdown-menu li:hover .dropdown-menu {
+    display: block;
 }
 
 /** Top Line **/
